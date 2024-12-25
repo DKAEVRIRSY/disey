@@ -10,5 +10,29 @@
 <body>
     <h1 id="show"></h1>
     <button onclick="show()">Show</button>
+    <style>
+        body {
+    background-color: wheat;
+    color: black;
+    font-family: chiller;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 10px 34px gray;
+    color: white;
+    background-color: black;
+}
+    </style>
+    <script>
+        function show() {
+    const words = document.getElementById("show");
+    words.outerHTML = "<h1>HELLO VISITOR</h1>";
+}
+    </script>
 </body>
 </html>
